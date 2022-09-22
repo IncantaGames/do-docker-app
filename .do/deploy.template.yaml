@@ -1,5 +1,5 @@
 spec:
-  name: S"nM Dedicated Server"
+  name: "SnM Dedicated Server"
   services:
     - name: "snm-dedicated-server"
       image:
