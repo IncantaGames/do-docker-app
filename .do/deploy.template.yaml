@@ -4,7 +4,6 @@ spec:
     - name: "snm-dedicated-server"
       image:
         registry_type: "DOCR"
-        registry: "registry.digitalocean.com"
         repository: "snm/snm-dedicated-server"
         tag: "latest"
       envs:
