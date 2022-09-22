@@ -1,0 +1,38 @@
+spec:
+  name: SnM Dedicated Server
+  services:
+    - name: snm-dedicated-server
+      image:
+        registry_type: DOCR
+        registry: registry.digitalocean.com/snm
+        repository: tbd
+        tag: latest
+      envs:
+        - key: SNM_NAME
+          value:
+          scope: RUN_TIME
+          type: GENERAL
+        - key: SNM_OWNER_STEAM_ID
+          value:
+          scope: RUN_TIME
+          type: GENERAL
+        - key: SNM_PASSWORD
+          value:
+          scope: RUN_TIME
+          type: GENERAL
+        - key: SNM_MAX_PLAYERS
+          value: 16
+          scope: RUN_TIME
+          type: GENERAL
+        - key: SNM_DAYS_UNTIL_RESET
+          value: 1
+          scope: RUN_TIME
+          type: GENERAL
+        - key: SNM_RESET_TIME_OF_DAY
+          value: 00:00
+          scope: RUN_TIME
+          type: GENERAL
+        - key: SNM_RESET_WARNINGS_IN_MINUTES
+          value: 60,30,5,1
+          scope: RUN_TIME
+          type: GENERAL
